@@ -1,0 +1,26 @@
+<?php
+
+/**
+ * @file
+ * Custom module that alters forms
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+// use Drupal\Core\Config\ConfigFactoryInterface;
+
+function g3_form_system_site_information_settings_alter (&$form, FormStateInterface $form_state ) {
+  $form['site_phone'] = [
+    '#type' => 'tel',
+    '#title' => t('Site Phone'),
+    '#default_value' => Drupal::config('system.site')->get('phone'),
+  ];
+
+  $form['#submit'][] = 'g3_system_site_information_phone_submit';
+}
+
+function g3_system_site_information_phone_submit(array &$form, FormStateInterface $form_state) {
+  $config = Drupal::configFactory()->getEditable('system.site');
+  $config
+  ->set('phone', $form_state->getValue('site_phone'))
+  ->save();
+}
