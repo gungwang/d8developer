@@ -50,9 +50,12 @@ class RequestSubscriber implements EventSubscriberInterface {
   public function doAnonymousRedirect(GetResponseEvent $event) {
     // make sue we are not on the user login route.
     $currentRoute = $this->routeMatch->getRouteName();
+    // dpm($currentRoute); exit;
     if ( $currentRoute == 'user.login'
       || $currentRoute == 'user.register'
-      || $currentRoute == 'user.pass.http') {
+      || $currentRoute == 'user.pass.http'
+      || stristr($currentRoute, 'gung')
+    ) {
       return;
     }
     // check if the current user is logged in.
