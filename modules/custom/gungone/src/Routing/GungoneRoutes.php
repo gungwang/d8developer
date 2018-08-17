@@ -1,10 +1,10 @@
 <?php
 
 namespace Drupal\gungone\Routing;
+
 use Symfony\Component\Routing\Route;
 
 class GungoneRoutes {
-  
   public function routes() {
     $routes = [];
     $routes['gungone.mypage'] = new Route(

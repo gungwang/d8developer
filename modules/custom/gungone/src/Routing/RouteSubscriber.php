@@ -1,6 +1,7 @@
 <?php
 
 namespace Drupal\gungone\Routing;
+
 use Drupal\Core\Routing\RouteSubscriberBase;
 use Symfony\Component\Routing\RouteCollection;
 
@@ -15,4 +16,5 @@ class RouteSubscriber extends RouteSubscriberBase {
        $route->setPath('/page/my-page');
      }
    }
+
 }

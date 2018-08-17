@@ -37,4 +37,9 @@ class OnepageController extends ControllerBase {
        '#markup' => t('This is a page of route_callbacks from OnepageController class.')
      ];
    }
+
+   public function getThirdPage(){
+     $str = stristr('dasdf', 'aa');
+     
+   }
 }
