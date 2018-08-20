@@ -1,0 +1,13 @@
+g6_config_entity.announcement.*:
+  type: config_entity
+  label: 'Site Announcement'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Announcement Label'
+    message:
+      type: text
+      label: 'Announcement Content'
