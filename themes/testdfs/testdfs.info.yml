@@ -1,0 +1,8 @@
+name: Test DFS
+type: theme
+core: 8.x
+description: this is a test dfs theme
+base theme: classy
+
+libraries:
+  - testdfs/global-styling

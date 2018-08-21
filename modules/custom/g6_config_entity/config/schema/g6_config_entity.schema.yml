@@ -7,7 +7,7 @@ g6_config_entity.announcement.*:
       label: 'ID'
     label:
       type: label
-      label: 'Announcement Label'
+      label: 'Label'
     message:
       type: text
-      label: 'Announcement Content'
+      label: 'Message'

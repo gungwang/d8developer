@@ -2,7 +2,6 @@
 namespace Drupal\g6_config_entity\Entity;
 
 use Drupal\Core\Config\Entity\ConfigEntityBase;
-
 /**
  * @ConfigEntityType(
  *   id = "announcement",
@@ -19,7 +18,7 @@ use Drupal\Core\Config\Entity\ConfigEntityBase;
  *   config_prefix = "announcement",
  *   entity_keys = {
  *     "id" = "id",
- *     "label" = "Announcement Label"
+ *     "label" = "label"
  *   },
  *   links = {
  *     "delete-form" = "/admin/config/system/site-announcements/manage/{announcement}/delete",
@@ -33,6 +32,8 @@ use Drupal\Core\Config\Entity\ConfigEntityBase;
  *   }
  * )
  */
+
+
 
 class SiteAnnouncement extends ConfigEntityBase implements SiteAnnouncementInterface {
 

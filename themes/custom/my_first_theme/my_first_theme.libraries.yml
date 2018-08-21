@@ -1,0 +1,19 @@
+global-styling:
+  version: 8.x-1.0.0
+  css:
+    theme:
+      css/global.css: {}
+  js:
+    js/global.js: {}
+  dependencies:
+    - core/drupal
+    - core/jquery
+
+home-styling:
+  version: 8.x1.0.1
+  css:
+    css/homepage.css: {}
+  js:
+    js/homepage.js: {}
+  dependencies:
+    - core/jquery
