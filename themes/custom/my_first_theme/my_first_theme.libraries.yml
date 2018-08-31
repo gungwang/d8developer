@@ -12,7 +12,8 @@ global-styling:
 home-styling:
   version: 8.x1.0.1
   css:
-    css/homepage.css: {}
+    theme:
+      css/homepage.css: {}
   js:
     js/homepage.js: {}
   dependencies:

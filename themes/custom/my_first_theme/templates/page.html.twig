@@ -13,6 +13,7 @@
   </header>
 
   {{ page.primary_menu }}
+  {{ kint(page.primary_menu)}}
   {{ page.secondary_menu }}
 
   {{ page.breadcrumb }}
@@ -51,3 +52,32 @@
   {% endif %}
 
 </div>{# /.layout-container #}
+
+
+<!--
+curl -X POST 'http://drupal-8-5-6.dd:8083/entity/node?_format=json' \
+-u gungwang:gungwang \
+-H 'content-type: application/json' \
+-H 'x-csrf-token: s_8x1kadisQPgP907DzRGtevBRvF9fJkyYXmOXQMLkw' \
+-d '{
+"type":"article",
+"status":{"value":true},
+"title":{"value":"Testin 4 via Gung REST"},
+"body":{"value":"Test byu gung fasdifji."}
+}'
+
+
+
+curl --include \
+  --request POST \
+  --user gungwang:gungwang \
+  --header 'Content-type: application/hal+json' \
+  --header 'X-CSRF-Token: s_8x1kadisQPgP907DzRGtevBRvF9fJkyYXmOXQMLkw' \
+  http://drupal-8-5-6.dd:8083/entity/node?_format=hal_json \
+  --data-binary '{
+    "_links":{
+      "type":{"href":"http://drupal-8-5-6.dd:8083/rest/type/node/article"}},
+      "title":[{"value":"Example node title"}],
+      "type":[{"target_id":"article"}]
+    }'
+-->
