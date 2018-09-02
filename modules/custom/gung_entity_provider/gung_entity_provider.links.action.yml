@@ -1,0 +1,5 @@
+entity.gung_content_entity.add_form:
+  route_name: entity.gung_content_entity.add_form
+  title: 'Add Gung content entity'
+  appears_on:
+    - entity.gung_content_entity.collection

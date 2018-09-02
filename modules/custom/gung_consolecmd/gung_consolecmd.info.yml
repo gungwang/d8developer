@@ -1,0 +1,5 @@
+name: 'Gung ConsoleCMD'
+type: module
+description: 'Gung test module for Drupal Console Command'
+core: 8.x
+package: 'Gung Demo'

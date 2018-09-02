@@ -1,0 +1,30 @@
+add gung content entity entities:
+  title: 'Create new Gung content entity entities'
+
+administer gung content entity entities:
+  title: 'Administer Gung content entity entities'
+  description: 'Allow to access the administration form to configure Gung content entity entities.'
+  restrict access: true
+
+delete gung content entity entities:
+  title: 'Delete Gung content entity entities'
+
+edit gung content entity entities:
+  title: 'Edit Gung content entity entities'
+
+view published gung content entity entities:
+  title: 'View published Gung content entity entities'
+
+view unpublished gung content entity entities:
+  title: 'View unpublished Gung content entity entities'
+
+view all gung content entity revisions:
+  title: 'View all Gung content entity revisions'
+
+revert all gung content entity revisions:
+  title: 'Revert all Gung content entity revisions'
+  description: 'Role requires permission <em>view Gung content entity revisions</em> and <em>edit rights</em> for gung content entity entities in question or <em>administer gung content entity entities</em>.'
+
+delete all gung content entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Gung content entity revisions</em> and <em>delete rights</em> for gung content entity entities in question or <em>administer gung content entity entities</em>.'

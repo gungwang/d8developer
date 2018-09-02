@@ -1,0 +1,14 @@
+
+# Gung content entity menu items definition
+entity.gung_content_entity.collection:
+  title: 'Gung content entity list'
+  route_name: entity.gung_content_entity.collection
+  description: 'List Gung content entity entities'
+  parent: system.admin_structure
+  weight: 100
+
+gung_content_entity.admin.structure.settings:
+  title: 'Gung content entity settings'
+  description: 'Configure Gung content entity entities'
+  route_name: gung_content_entity.settings
+  parent: system.admin_structure

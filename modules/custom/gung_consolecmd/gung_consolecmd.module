@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains gung_consolecmd.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function gung_consolecmd_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the gung_consolecmd module.
+    case 'help.page.gung_consolecmd':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Gung test module for Drupal Console Command') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function gung_consolecmd_theme() {
+  return [
+    'gung_consolecmd' => [
+      'render element' => 'children',
+    ],
+  ];
+}

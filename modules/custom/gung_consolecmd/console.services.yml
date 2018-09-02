@@ -1,0 +1,6 @@
+services:
+  gung_consolecmd.gung_consolecmd_default:
+    class: Drupal\gung_consolecmd\Command\GungConsoleCommand
+    arguments: []
+    tags:
+      - { name: drupal.command }

@@ -1,0 +1,11 @@
+name: Flickity Fields
+type: module
+description: Provides Flickity integration with Drupal Fields.
+# core: 8.x
+package: Flickity
+
+# Information added by Drupal.org packaging script on 2017-09-18
+version: '8.x-2.2'
+core: '8.x'
+project: 'flickity'
+datestamp: 1505714346

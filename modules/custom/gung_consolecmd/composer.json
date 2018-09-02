@@ -1,0 +1,14 @@
+{
+  "name": "drupal/gung_consolecmd",
+  "type": "drupal-module",
+  "description": "Gung test module for Drupal Console Command",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/gung_consolecmd",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/gung_consolecmd",
+    "source": "http://cgit.drupalcode.org/gung_consolecmd"
+  },
+  "require": { }
+}
