@@ -1,12 +1,10 @@
-name: First Theme
-description: My First Theme
-type: theme
-base theme: classy
 core: 8.x
-version: 8.x-1.0.0
+type: theme
+base theme: bootstrap
 
-libraries:
-  - my_first_theme/global-styling
+name: 'DFS Bootstrap'
+description: 'Uses the Bootstrap framework Sass source files and must be compiled (not for beginners).'
+package: 'Bootstrap'
 
 regions:
   navigation: 'Navigation'
@@ -20,3 +18,7 @@ regions:
   footer: 'Footer'
   page_top: 'Page top'
   page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - dfs_bootstrap/framework
